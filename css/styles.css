@@ -80,6 +80,32 @@ img {
   margin: 0 auto;
 }
 
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--action-color);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--white);
+}
+
 /* ===========ЛОГО============= */
 .logo {
   margin-right: 93px;
@@ -160,6 +186,13 @@ img {
   padding-bottom: 32px;
 }
 
+.mail-img {
+  align-items: center;
+}
+
+.tel-img {
+  align-items: center;
+}
 .contacts-link:not(:last-child) {
   margin-right: 50px;
 }
@@ -171,6 +204,15 @@ img {
   padding: 200px 0;
   background-color: var(--footer-bgc);
   text-align: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/Img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -336,6 +378,22 @@ img {
 }
 
 /* КОНЕЦ ВОЗМОЖНОСТИ и КОМАНДА */
+
+/*ПОСТОЯННЫЕ КЛИЕНТЫ*/
+.clients-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+}
+
+.clients-list {
+  display: flex;
+}
+/*КОНЕЦ ПОСТОЯННЫЕ КЛИЕНТЫ*/
 
 /* ПОРТФОЛИО */
 .filter-btn {
