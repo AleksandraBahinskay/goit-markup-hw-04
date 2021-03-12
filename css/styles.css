@@ -81,32 +81,6 @@ img {
   margin: 0 auto;
 }
 
-.social-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.social-list-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: transparent;
-}
-
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: var(--action-color);
-}
-
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  fill: var(--white);
-}
-
 /* ===========ЛОГО============= */
 .logo {
   margin-right: 93px;
@@ -404,7 +378,31 @@ img {
 .team-member {
   margin-bottom: 10px;
 }
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--action-color);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--white);
+}
 /* КОНЕЦ ВОЗМОЖНОСТИ и КОМАНДА */
 
 /*ПОСТОЯННЫЕ КЛИЕНТЫ*/
