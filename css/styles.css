@@ -184,6 +184,11 @@ img {
   margin-left: auto;
 }
 
+.contacts-links:hover svg,
+.contacts-links:focus svg {
+  fill: var(--action-color);
+}
+
 .contacts-links {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -194,23 +199,6 @@ img {
   letter-spacing: 0.02em;
   display: flex;
   align-items: center;
-}
-
-.contacts-links: hover,
-.contacts-links:focus {
-  color: var(--action-color);
-  fill: var(--action-color);
-}
-
-.mail-link: hover,
-.mail-link:focus {
-  color: #2196f3;
-  fill: #2196f3;
-}
-и .tel-link:hover,
-.tel-link:focus {
-  color: #2196f3;
-  fill: #2196f3;
 }
 
 .auth-icon {
