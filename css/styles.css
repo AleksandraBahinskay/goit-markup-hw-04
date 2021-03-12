@@ -71,6 +71,7 @@ img {
 
 .link {
   text-decoration: none;
+  fill: var(--action-color);
 }
 
 .container {
@@ -183,7 +184,7 @@ img {
   margin-left: auto;
 }
 
-.contacts-link {
+.contacts-links {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
@@ -199,6 +200,17 @@ img {
 .contacts-links:focus {
   color: var(--action-color);
   fill: var(--action-color);
+}
+
+.mail-link: hover,
+.mail-link:focus {
+  color: #2196f3;
+  fill: #2196f3;
+}
+и .tel-link:hover,
+.tel-link:focus {
+  color: #2196f3;
+  fill: #2196f3;
 }
 
 .auth-icon {
