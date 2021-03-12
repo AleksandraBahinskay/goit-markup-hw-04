@@ -480,6 +480,10 @@ img {
   border-radius: 4px;
 }
 
+.clients-thumb {
+  display: flex;
+}
+
 .filter-list-item {
   margin-right: 8px;
 }
