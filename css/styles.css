@@ -614,8 +614,10 @@ img {
   display: flex;
 }
 
-.icon-list-items:not(:last-child) {
+.icon-list-item:not(:last-child) {
+  width: calc((100%-30px) / 4);
   margin-right: 10px;
+}
 }
 
 .footer .icons-thumb {
@@ -624,6 +626,17 @@ img {
 .footer-icons {
   fill: var(--white);
 }
+
+.footer-social-list-link:hover .social-list-icon,
+.footer-social-list-link:focus .social-list-icon {
+  fill: var(--white);
+}
+
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+  background-color: var(--action-color);
+}
+
 .footer-social-list-link {
   display: flex;
   align-items: center;
