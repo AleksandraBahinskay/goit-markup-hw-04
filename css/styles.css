@@ -202,6 +202,7 @@ img {
     url(../images/hero/Img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  min-width: 1200px;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -544,6 +545,7 @@ img {
 
 /* ПОДВАЛ */
 .footer {
+  min-width: 1200px;
   background-color: var(--footer-bgc);
 }
 
