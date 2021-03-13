@@ -244,6 +244,9 @@ img {
 }
 
 /* Скрытый заголовок секции */
+.advantages {
+  padding-bottom: 0;
+}
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6 IE7 */
@@ -363,6 +366,7 @@ img {
 .team-item {
   flex-basis: calc((100% - 90px) / 4);
   margin-right: 30px;
+  background-color: var(--white);
 }
 .team-item:last-child {
   margin-right: 0;
@@ -415,21 +419,23 @@ img {
 
 /*ПОСТОЯННЫЕ КЛИЕНТЫ*/
 .partners {
-  margin: 94px 0;
+  padding: 94px 0;
 }
 .partners-list {
   display: flex;
-  justify-content: space-between;
 }
 
 .partners-thumb {
   width: 170px;
   height: 90px;
-  border: 1px solid var(--partner-icon);
+  border: 1px solid var(--paragraph-color);
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.items:not(:last-child) {
+  margin-right: 30px;
 }
 
 .partner-logo {
@@ -459,6 +465,8 @@ img {
 .filter-btn:focus {
   color: #ffffff;
   background-color: var(--action-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-title {
@@ -526,12 +534,23 @@ img {
   border-top: none;
 }
 
+.projects-item-thumb:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 /* КОНЕЦ ПОРТФОЛИО */
 
 /* ПОДВАЛ */
 .footer {
   background-color: var(--footer-bgc);
-  padding: 60px 0;
+}
+
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  align-items: baseline;
 }
 
 .footer .logo {
@@ -555,15 +574,20 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white);
 }
 
-.address .link {
+.phone,
+.email {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.address-text {
+  color: var(--white);
+}
+
 .invitation {
-  color: var(--secondary-accent-color);
+  color: var(--white);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -576,8 +600,18 @@ img {
   display: flex;
 }
 
+.footer-wraper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -20px;
+}
+
 .footer-wraper:not(:last-child) {
   margin-right: 70px;
+}
+
+.icon-list {
+  display: flex;
 }
 
 .icon-list-items:not(:last-child) {
@@ -589,5 +623,15 @@ img {
 }
 .footer-icons {
   fill: var(--white);
+}
+.footer-social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
 /* КОНЕЦ ПОДВАЛА */
