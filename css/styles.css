@@ -137,6 +137,7 @@ img {
 
 .site-nav {
   display: flex;
+ align-items: center;
 }
 
 .site-nav .list {
